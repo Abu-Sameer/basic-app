@@ -75,7 +75,7 @@ export const CardsData = [
     color: {
       backGround:
         'linear-gradient(rgb(248, 212, 154) -146.42%, rgb(225 202 113) -46.42%)',
-      boxShadow: '0px 10px 20px 0px #f9d59g',
+      boxShadow: '0px 10px 20px 0px #f9d597',
     },
     barValue: 60,
     value: '4,270',

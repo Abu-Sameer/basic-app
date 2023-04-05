@@ -1,12 +1,14 @@
 import React from 'react';
-import Card from '../Card/Card';
 import './MainDash.css';
+import Cards from '../Cards/Cards';
+import Table from '../Table/Table';
 
 export default function MainDash() {
   return (
-    <div>
+    <div className="MainDash">
       <h1>Dashbard</h1>
-      <Card />
+      <Cards />
+      <Table />
     </div>
   );
 }

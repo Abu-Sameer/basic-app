@@ -1,3 +1,7 @@
+import img1 from '../images/a6.jpeg';
+import img2 from '../images/a7.jpeg';
+import img3 from '../images/a8.jpeg';
+
 //Sidebar
 import {
   UilEstate,
@@ -86,5 +90,26 @@ export const CardsData = [
         data: [10, 25, 15, 30, 12, 15, 20],
       },
     ],
+  },
+];
+
+export const UpdatesData = [
+  {
+    img: img1,
+    name: 'Salamn Singh',
+    noti: 'has order Apple smart watch 2500mh battery.',
+    time: '25 seconds ago',
+  },
+  {
+    img: img2,
+    name: 'Abrahm Jonney',
+    noti: 'has order Samsung gadget for charging battery.',
+    time: '30 minutes ago',
+  },
+  {
+    img: img3,
+    name: 'Khan Ayan',
+    noti: 'has order Apple smart watch, samgung Gear 2500mh battery.',
+    time: '2 hours ago',
   },
 ];

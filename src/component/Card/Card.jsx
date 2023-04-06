@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Card.css';
-import { motion, LayoutGroup } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { UilTimes } from '@iconscout/react-unicons';
@@ -9,13 +9,13 @@ import Chart from 'react-apexcharts';
 export default function Card(props) {
   const [expand, setExpand] = useState(false);
   return (
-    <LayoutGroup>
+    <div>
       {expand ? (
         <ExpandedCard param={props} setExpand={() => setExpand(false)} />
       ) : (
         <CompactCard param={props} setExpand={() => setExpand(true)} />
       )}
-    </LayoutGroup>
+    </div>
   );
 
   //CompactCard
@@ -31,15 +31,16 @@ export default function Card(props) {
         }}
         onClick={setExpand}
         animate={{
-          x: 0,
+          y: 0,
           opacity: 1,
         }}
         initial={{
           opacity: 0,
-          x: 100,
+          y: 50,
         }}
         transition={{
           type: 'spring',
+          stiffness: 30,
         }}
       >
         <div className="radialBar">
@@ -119,6 +120,18 @@ export default function Card(props) {
         style={{
           background: param.color.backGround,
           boxShadow: param.color.boxShadow,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        initial={{
+          y: -60,
+          opacity: 0,
+        }}
+        transition={{
+          type: 'spring',
+          stiffness: 30,
         }}
       >
         <div

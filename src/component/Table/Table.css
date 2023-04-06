@@ -22,3 +22,20 @@ th {
 .detail {
   color: #00b5ff !important;
 }
+
+@media screen and (max-width: 1200px) {
+  .table {
+    width: 170%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+  }
+}
